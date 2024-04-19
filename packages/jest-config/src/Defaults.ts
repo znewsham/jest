@@ -65,6 +65,7 @@ const defaultOptions: Config.DefaultOptions = {
   openHandlesTimeout: 1000,
   passWithNoTests: false,
   preserveLoadOrder: false,
+  preserveSymlinks: false,
   prettierPath: 'prettier',
   resetMocks: false,
   resetModules: false,

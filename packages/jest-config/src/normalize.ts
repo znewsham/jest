@@ -923,6 +923,7 @@ export default async function normalize(
       case 'outputFile':
       case 'passWithNoTests':
       case 'preserveLoadOrder':
+      case 'preserveSymlinks':
       case 'randomize':
       case 'replname':
       case 'resetMocks':
