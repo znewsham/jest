@@ -289,6 +289,7 @@ export const RawInitialOptions = Type.Partial(
     passWithNoTests: Type.Boolean(),
     preset: Type.Union([Type.String(), Type.Null()]),
     preserveLoadOrder: Type.Boolean(),
+    preserveSymlinks: Type.Boolean(),
     prettierPath: Type.Union([Type.String(), Type.Null()]),
     projects: Type.Array(
       Type.Union([

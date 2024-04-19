@@ -183,6 +183,7 @@ export type DefaultOptions = {
   openHandlesTimeout: number;
   passWithNoTests: boolean;
   preserveLoadOrder: boolean;
+  preserveSymlinks: boolean;
   prettierPath: string;
   resetMocks: boolean;
   resetModules: boolean;
@@ -292,6 +293,7 @@ export type GlobalConfig = {
   passWithNoTests: boolean;
   projects: Array<string>;
   preserveLoadOrder: boolean;
+  preserveSymlinks: boolean;
   randomize?: boolean;
   replname?: string;
   reporters?: Array<ReporterConfig>;
@@ -360,6 +362,7 @@ export type ProjectConfig = {
   openHandlesTimeout: number;
   preset?: string;
   preserveLoadOrder: boolean;
+  preserveSymlinks: boolean;
   prettierPath: string;
   reporters: Array<string | ReporterConfig>;
   resetMocks: boolean;
@@ -450,6 +453,7 @@ export type Argv = Arguments<
     outputFile: string;
     preset: string | null | undefined;
     preserveLoadOrder: boolean;
+    preserveSymlinks: boolean;
     prettierPath: string | null | undefined;
     projects: Array<string>;
     randomize: boolean;

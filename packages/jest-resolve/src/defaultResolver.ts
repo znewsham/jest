@@ -80,6 +80,9 @@ export type ResolverOptions = {
   pathFilter?: PathFilter;
   /** Current root directory. */
   rootDir?: string;
+
+  // Whether to presereve symlinks or not
+  preserveSymlinks?: boolean;
 };
 
 type UpstreamResolveOptionsWithConditions = UpstreamResolveOptions &
@@ -104,7 +107,8 @@ const defaultResolver: SyncResolver = (path, options) => {
     ...options,
     isDirectory,
     isFile,
-    preserveSymlinks: false,
+    preserveSymlinks:
+      options.preserveSymlinks === undefined ? false : options.preserveSymlinks,
     readPackageSync,
     realpathSync,
   };

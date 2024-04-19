@@ -15,6 +15,7 @@ export type ResolverConfig = {
   platforms?: Array<string>;
   resolver?: string | null;
   rootDir: string;
+  preserveSymlinks: boolean;
 };
 
 type ModuleNameMapperConfig = {

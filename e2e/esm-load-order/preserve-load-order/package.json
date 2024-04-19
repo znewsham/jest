@@ -3,6 +3,7 @@
   "jest": {
     "transform": {},
     "testEnvironment": "node",
-    "preserveLoadOrder": true
+    "preserveLoadOrder": true,
+    "preserveSymlinks": true
   }
 }

@@ -121,6 +121,7 @@ export const initialOptions: Config.InitialOptions = {
   openHandlesTimeout: 1000,
   passWithNoTests: false,
   preserveLoadOrder: false,
+  preserveSymlinks: false,
   preset: 'react-native',
   prettierPath: '<rootDir>/node_modules/prettier',
   projects: ['project-a', 'project-b/'],
@@ -281,6 +282,7 @@ export const initialProjectOptions: Config.InitialProjectOptions = {
   modulePaths: ['/shared/vendor/modules'],
   openHandlesTimeout: 1000,
   preserveLoadOrder: false,
+  preserveSymlinks: false,
   preset: 'react-native',
   prettierPath: '<rootDir>/node_modules/prettier',
   reporters: [
